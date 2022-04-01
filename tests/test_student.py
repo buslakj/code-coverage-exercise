@@ -32,7 +32,7 @@ def test_summary():
     )
 
     assert anne.summary() == "Anne Byron is a senior enrolled in 2 classes"
-
+#  added tests
 def test_get_student_with_more_classes():
     charles = Student("Charles Babbage", "senior", ["mechanical engineering"])
     ada = Student(
@@ -60,6 +60,7 @@ def test_get_student_with_more_classes_return():
     # TODO: write assertions
     # assert
     assert  result == charles
+
 
 def test_if_courses_empty():
     name = "Ada Lovelace"
