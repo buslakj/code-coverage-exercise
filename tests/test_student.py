@@ -40,5 +40,33 @@ def test_get_student_with_more_classes():
         "sophomore",
         ["mathematics", "foundations of computing"]
     )
+#  act 
+    result = get_student_with_more_classes(charles,ada)
 
     # TODO: write assertions
+    # assert
+    assert  result == ada
+
+def test_get_student_with_more_classes_return():
+    charles = Student("Charles Babbage", "senior", ["mechanical engineering"])
+    ada = Student(
+        "Ada Lovelace",
+        "sophomore",
+        ["mathematics", "foundations of computing"]
+    )
+#  act 
+    result = get_student_with_more_classes(ada, charles)
+
+    # TODO: write assertions
+    # assert
+    assert  result == charles
+
+def test_if_courses_empty():
+    name = "Ada Lovelace"
+    level = "sophomore"
+    courses = []
+
+    ada = Student(name, level, courses)
+
+
+    assert ada.courses == []
